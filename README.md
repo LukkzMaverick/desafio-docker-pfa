@@ -1,6 +1,5 @@
 # desafio-docker-pfa
 
-mysql:
 <code>docker network create pfa</code><br/><br/>
 <code>docker run --network=pfa -d -p 3005:80 -v $(pwd)/mysql:/var/lib/mysql -e MYSQL_DATABASE=nodedb -e MYSQL_ROOT_PASSWORD=root --name db mysql:5.7</code><br/><br/>
 <code>docker exec -it db bash</code><br/><br/>
