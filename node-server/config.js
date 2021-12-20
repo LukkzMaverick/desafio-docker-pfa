@@ -4,7 +4,5 @@ const config = {
     password: 'root',
     database: 'nodedb'
 }
-const mysql = require('mysql')
-const connection = mysql.createConnection(config)
 
-module.exports = {connection}
+module.exports = {config}
