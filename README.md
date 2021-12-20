@@ -9,12 +9,12 @@
 <code>docker exec -it db bash</code><br/><br/>
 <code>mysql -uroot -p</code><br/><br/>
 digitar senha "root"<br/><br/>
-<code>use nodedb</code><br/><br/>
+<code>use nodedb;</code><br/><br/>
 <code>create table cursos(id int primary key auto_increment, name varchar(255));</code><br/><br/>
 <code>insert into cursos(name) values ("Docker"), ("Fundamentos de Arquitetura de Software"), ("Comunicacao"), ("RabbitMQ"), ("Apache Kafka");</code><br/><br/>
 <code>exit</code><br/><br/>
 <code>exit</code><br/><br/>
-<code>docker run --name=nodecontainer --network=pfa -it -v $(pwd)/node-server:/usr/src/app lukkzmaverick/pfa-desafio1 bash</code><br/><br/>
+<code>docker run --name=nodecontainer --network=pfa -it -v $(pwd)/node-server:/usr/src/app lukkzmaverick/pfa-desafio1</code><br/><br/>
 <code>npm i</code><br/><br/>
 <code>npm start</code><br/><br/>
 
