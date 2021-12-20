@@ -15,8 +15,6 @@ digitar senha "root"<br/><br/>
 <code>exit</code><br/><br/>
 <code>exit</code><br/><br/>
 <code>docker run --name=nodecontainer --network=pfa -it -v $(pwd)/node-server:/usr/src/app lukkzmaverick/pfa-desafio1</code><br/><br/>
-<code>npm i</code><br/><br/>
-<code>npm start</code><br/><br/>
 
 Em outra aba:<br/><br/>
 <code>docker run --network=pfa -d -p 8080<br/><br/>:80 lukkzmaverick/pfa-desafio1-nginx</code><br/><br/>
