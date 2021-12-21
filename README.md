@@ -14,7 +14,7 @@ digitar senha "root"<br/><br/>
 <code>insert into cursos(name) values ("Docker"), ("Fundamentos de Arquitetura de Software"), ("Comunicacao"), ("RabbitMQ"), ("Apache Kafka");</code><br/><br/>
 <code>exit</code><br/><br/>
 <code>exit</code><br/><br/>
-<code>docker run --name=nodecontainer --network=pfa -it -v $(pwd)/node-server:/usr/src/app lukkzmaverick/pfa-desafio1</code><br/><br/>
+<code>docker run --name=nodecontainer --network=pfa -itd -v $(pwd)/node-server:/usr/src/app lukkzmaverick/pfa-desafio1</code><br/><br/>
 
 Em outra aba:<br/><br/>
 <code>docker run --network=pfa -d -p 8080<br/><br/>:80 lukkzmaverick/pfa-desafio1-nginx</code><br/><br/>
